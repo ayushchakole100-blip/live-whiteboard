@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:3001');
+const socket = io('https://live-whiteboard-81ro.onrender.com');
 const STANDARD_COLORS = ['#000000', '#e74c3c', '#e67e22', '#f1c40f', '#2ecc71', '#3498db', '#9b59b6'];
 
 export default function Whiteboard({ roomId }) {
