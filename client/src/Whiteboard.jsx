@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-// const socket = io('https://live-whiteboard-81ro.onrender.com');
+const socket = io('https://live-whiteboard-81ro.onrender.com');
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://live-whiteboard-81ro.onrender.com';
-const socket = io(SOCKET_URL);
+// const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://live-whiteboard-81ro.onrender.com';
+// const socket = io(SOCKET_URL);
 
 const STANDARD_COLORS = [
   '#000000', '#495057', '#868e96', '#ffffff',
